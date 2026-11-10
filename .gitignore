@@ -11,6 +11,7 @@ dist/
 /figma/
 /frontend/
 /install.sh
+/PROYECTO.md
 
 # Local configuration and generated files
 .env.*

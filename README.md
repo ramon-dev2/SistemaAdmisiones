@@ -30,6 +30,6 @@ Si el entorno restringe el cargador de configuracion de Vite, agregar `-- --conf
 
 Los datos son ficticios y las solicitudes nuevas se guardan en el navegador. El acceso no implementa autenticacion real. La integracion .NET requiere configurar y conectar contratos reales; ver [.env.example](.env.example).
 
-Consulta [PROYECTO.md](PROYECTO.md) para las rutas, limitaciones y detalles de integracion.
+Las rutas de las pantallas estan definidas en [src/app/router.tsx](src/app/router.tsx).
 
 Las referencias visuales, las skills locales, las dependencias instaladas y la compilacion generada estan excluidas de Git.
