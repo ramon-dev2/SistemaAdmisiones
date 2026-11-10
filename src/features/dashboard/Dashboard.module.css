@@ -1,0 +1,13 @@
+.header { display:flex; align-items:center; justify-content:space-between; gap:20px; padding-bottom:8px; }
+.header h1 { font-size:28px; }
+.header p { margin-top:4px; font-size:13px; }
+:global(.metric).priorityMetric { border-top:4px solid var(--color-action); padding-top:21px; }
+:global(.metric).priorityMetric p { color:var(--color-ink); font-size:14px; font-weight:700; }
+:global(.metric).priorityMetric strong { font-size:38px; font-weight:700; line-height:1.25; }
+:global(.card).attention { border-left:4px solid var(--color-action); }
+@media(max-width:700px) {
+  .header { align-items:stretch; flex-direction:column; gap:16px; }
+  .header :global(.button) { align-self:flex-start; }
+  :global(.metric).priorityMetric { padding-top:15px; }
+  :global(.metric).priorityMetric strong { font-size:34px; }
+}

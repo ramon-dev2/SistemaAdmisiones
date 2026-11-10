@@ -1,0 +1,20 @@
+:root {
+  --color-identity: #18324f;
+  --color-action: #2457a6;
+  --color-active: #eaf1fb;
+  --color-ink: #172638;
+  --color-muted: #475569;
+  --color-white: #ffffff;
+  --color-bg: #f5f7fa;
+  --color-line: #dce3eb;
+  --color-on-identity: #ffffff;
+  --color-on-identity-muted: #dbeafe;
+  --color-approved-text: #166534;
+  --color-approved-bg: #dcfce7;
+  --color-review-text: #1e40af;
+  --color-review-bg: #dbeafe;
+  --color-pending-text: #854d0e;
+  --color-pending-bg: #fef3c7;
+  --font-sans: "Open Sans", system-ui, sans-serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+}
