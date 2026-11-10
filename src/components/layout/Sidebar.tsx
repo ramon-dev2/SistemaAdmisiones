@@ -1,6 +1,7 @@
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import Brand from './Brand';
 import { items } from './navigation';
+import NavigationIcon from '../ui/NavigationIcon';
 type SidebarProps = {
   open: boolean;
   onNavigate: () => void;
@@ -12,7 +13,7 @@ export default function Sidebar({ open, onNavigate }: SidebarProps) {
     <small className="eyebrow">ESPACIO DE TRABAJO</small>
     <nav>
       {items.map(([to, label, icon]) => (<NavLink key={to} to={to} end={to !== '/admissions' || pathname === '/admissions/new'} onClick={onNavigate}>
-        <span className="navIcon" aria-hidden>{icon}</span>{label}
+        <NavigationIcon icon={icon} />{label}
       </NavLink>))}
     </nav>
     <div className="period">

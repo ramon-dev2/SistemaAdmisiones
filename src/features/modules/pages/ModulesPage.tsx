@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import Title from '../../../components/ui/PageHeader';
+import NavigationIcon from '../../../components/ui/NavigationIcon';
 const modules = [
   [
-    'Registro de solicitudes', 'Crea una solicitud y registra la información del aspirante.', 'Crear solicitud', '/admissions/new', '♧'
+    'Registro de solicitudes', 'Crea una solicitud y registra la información del aspirante.', 'Crear solicitud', '/admissions/new', 'file'
   ], [
     'Seguimiento de admisiones', 'Busca aspirantes y consulta el estado de sus expedientes.', 'Consultar solicitudes', '/admissions', '⌕'
   ], [
@@ -19,7 +20,7 @@ export default function ModulesPage() {
   return <>
     <Title title="Todo lo que necesitas, en un lugar." description="Selecciona un módulo para continuar tu gestión." />
     <div className="moduleGrid">{modules.map(([title, desc, label, to, icon]) => <section className="card module" key={to}>
-      <span className="navIcon" aria-hidden>{icon}</span>
+      <NavigationIcon icon={icon} />
       <h2>{title}</h2>
       <p>{desc}</p>
       <Link className="button secondary" to={to}>{label} →</Link>

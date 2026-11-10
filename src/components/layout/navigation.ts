@@ -4,7 +4,7 @@ export const items = [
   ], [
     '/modules', 'Menú de módulos', '▦'
   ], [
-    '/admissions/new', 'Nueva solicitud', '♧'
+    '/admissions/new', 'Nueva solicitud', 'file'
   ], [
     '/admissions', 'Consultas', '⌕'
   ], [
