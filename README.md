@@ -33,3 +33,18 @@ Los datos son ficticios y las solicitudes nuevas se guardan en el navegador. El 
 Las rutas de las pantallas estan definidas en [src/app/router.tsx](src/app/router.tsx).
 
 Las referencias visuales, las skills locales, las dependencias instaladas y la compilacion generada estan excluidas de Git.
+
+## GitHub Pages
+
+Publicacion: https://ramon-dev2.github.io/SistemaAdmisiones/
+
+El workflow `.github/workflows/deploy-pages.yml` instala dependencias, comprueba TypeScript, compila y publica cada cambio de `main`. El repositorio debe tener `Settings > Pages > Source: GitHub Actions` activado.
+
+```powershell
+npm.cmd run build:pages
+npm.cmd run preview -- --mode github-pages
+```
+
+La compilacion de Pages usa `/SistemaAdmisiones/` como ruta base y navegacion con `#`, por ejemplo `/SistemaAdmisiones/#/dashboard`, para permitir enlaces directos y recargas. El desarrollo local conserva sus rutas habituales.
+
+GitHub Pages publica el frontend de demostracion. Los registros permanecen en el almacenamiento del navegador; no se publica un backend .NET.
