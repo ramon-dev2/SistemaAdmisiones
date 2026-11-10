@@ -15,6 +15,19 @@ En Windows se usa `npm.cmd` para evitar restricciones de ejecución de `npm.ps1`
 
 ## Pantallas
 
+Cada pantalla tiene un componente independiente dentro de `src/features/<modulo>/pages/`:
+
+- `auth/pages/LoginPage.tsx`
+- `dashboard/pages/DashboardPage.tsx`
+- `modules/pages/ModulesPage.tsx`
+- `admissions/pages/NewAdmissionPage.tsx`
+- `admissions/pages/AdmissionsPage.tsx`
+- `admissions/pages/AdmissionDetailPage.tsx`
+- `academic/pages/AcademicPage.tsx`
+- `reports/pages/ReportsPage.tsx`
+
+`src/app/router.tsx` conecta las rutas y `src/components/layout/AppShell.tsx` compone la navegación, barra superior y pie compartidos. Los componentes reutilizables están en `src/components/`; la tabla de solicitudes, el hook de consulta y el esquema del formulario están separados dentro del módulo `admissions`.
+
 - `/login`: acceso de demostración; acepta correo válido y contraseña de al menos cuatro caracteres.
 - `/dashboard`: indicadores y solicitudes recientes.
 - `/modules`: navegación a los módulos.
