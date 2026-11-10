@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.env
+*.local
+
+# Local design references and development skills
+/mock/
+/react-university-dotnet-api/
+/react-university-figma/
+/react-university-frontend/
+/figma/
+/frontend/
+/install.sh
+
+# Local configuration and generated files
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
